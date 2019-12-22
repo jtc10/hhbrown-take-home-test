@@ -29,16 +29,54 @@ main {
   margin: auto;
 }
 
+/********** Layout **********/
+
+header,
+main,
+footer {
+  max-width: 1900px;
+  margin: auto;
+}
+
+header,
+.card_image,
+footer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
 /********** Typography **********/
 
 .bold-font-weight {
   font-weight: 600;
 }
 
+.style-names,
+button,
+.shoe-name,
+.footer-content-container p:first-child {
+  text-transform: uppercase;
+}
+
+.hero_introduction p,
+.style-names,
+label,
+button,
+input[placeholder='email address'],
+.product-grid_heading {
+  letter-spacing: 0.5px;
+}
+
+
 /*********** Header **********/
 
 header {
   height: 60px;
+}
+.header-image {
+  height: 31px;
+  width: 60px;
 }
 
 /********** Hero Image section **********/
@@ -52,14 +90,13 @@ header {
 }
 
 .hero_introduction {
-  width:100%;
+  width:310px;
   height: 66px;
+  margin: auto;
   text-align: center;
   padding-top: 14px;
 }
 .hero_bottom-copy {
-  width: 144px;
-  height: 20px;
   position: absolute;
   bottom: 12px;
   right: 19px;
@@ -67,18 +104,17 @@ header {
 .hero_introduction p {
   color: rgb(0, 0, 0);
   font-size: 17px;
-  letter-spacing: 0.5px;
   line-height: 22px;
   display: inline-block;
   width: 95%;
   margin: auto;
 }
-.hero_bottom-copy p {
-  text-transform: uppercase;
+.styles-shown {
+  display: none;
+}
+.style-names {
   color: rgb(0, 0, 0);
   font-size: 16px;
-  text-transform: uppercase;
-  letter-spacing: 0.5px;
 }
 
 /********** Email Sign Up Section **********/
@@ -99,7 +135,6 @@ label {
   height: 22px;
   color: rgb(0, 0, 0);
   font-size: 18px;
-  letter-spacing: 0.5px;
   padding-top: 7px;
 }
 input {
@@ -107,7 +142,6 @@ input {
   height: 50px;
   background: rgb(255, 255, 255);
   border: 1px solid rgb(0, 0, 0);
-  border-radius: 0px;
   margin-top: 20px;
 }
 input[placeholder='email address'] {
@@ -115,7 +149,6 @@ input[placeholder='email address'] {
   font-size: 16px;
   font-family: 'Dosis', sans-serif;
   font-weight: normal;
-  letter-spacing: 0.5px;
   padding-left: 20px;
 }
 button {
@@ -123,19 +156,15 @@ button {
   height: 50px;
   background: rgb(246, 246, 247);
   border: 1px solid rgb(0, 0, 0);
-  border-radius: 0px;
   font-family: 'Dosis', sans-serif;
   font-weight: 600;
   font-size: 17px;
-  letter-spacing: 0.5px;
   color: rgb(35, 31, 32);
-  text-transform: uppercase;
 }
 
 /********** Product Grid Section **********/
 .product-grid {
-  width: 100%;
-  margin-top: 20px;
+  margin: 20px auto 0 auto;
 }
 .product-grid_heading {
   margin: auto;
@@ -143,49 +172,44 @@ button {
   height: 31px;
   color: rgb(0, 0, 0);
   font-size: 24px;
-  letter-spacing: 0.5px;
 }
 .card-container {
+  width: 300px;
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
-  margin-top: 25px;
+  margin: 25px auto 0 auto;
 }
 .card {
   margin-bottom: 21px;
+  width: 140px;
 }
 .card_image {
-  width: 140px;
+  width: 100%;
   height: 140px;
   border: 1px solid rgb(243, 201, 177);
-  border-radius: 0px;
-  display: flex;
-  justify-content: center;
-  align-items: center;
 }
 .card_image img {
   width: 132px;
   height: 132px;
-  border-radius: 0px;
   object-fit: contain;
 }
 .shoe-name {
-  width: 73px;
-  height: 35px;
   color: rgb(0, 0, 0);
   font-size: 30px;
-  text-transform: uppercase;
   letter-spacing: 1.71px;
   line-height: 35px;
   margin-top: 16px;
 }
 .item-number,
 .color-options-menu {
-  height: 17px;
   color: rgb(0, 0, 0);
   font-size: 16px;
   letter-spacing: 0.47px;
   line-height: 17px;
+}
+.shoe-color-images {
+  display: none;
 }
 
 /********** Footer **********/
@@ -194,9 +218,6 @@ footer {
   height: 274px;
   background: rgb(243, 243, 244);
   margin: 15px auto 9px auto;
-  display: flex;
-  justify-content: center;
-  align-items: center;
 }
 .footer-content-container {
   width: 170px;
@@ -208,7 +229,6 @@ footer {
   height: 31px;
   color: rgb(0, 0, 0);
   font-size: 24px;
-  text-transform: uppercase;
   margin-bottom: 16px;
 }
 .footer-content-container div:nth-child(2),
@@ -227,4 +247,198 @@ footer {
   color: rgb(0, 0, 0);
   font-size: 20px;
   margin-top: 16px;
+}
+
+/********** Media Queries **********/
+/**********               **********/
+
+@media only screen and (min-width: 321px) {
+  main,
+  footer {
+    width: 95%;
+  }
+}
+
+@media only screen and (min-width: 760px) {
+
+  /** Global Vals **/
+  main,
+  footer {
+    width: 100%;
+  }
+
+  /** Header **/
+  header {
+    height: 121px;
+  }
+  .header-image {
+    width: 125px;
+    height: 64px;
+    margin: 28px auto;
+  }
+
+  /** Hero Section **/
+  .hero {
+    height: 450px;
+  }
+  .hero_introduction {
+    padding-top: 20px;
+    width:510px;
+    height: 129px;
+    line-height: 43px;
+  }
+  .hero_bottom-copy {
+    position: absolute;
+    bottom: 25px;
+    right: 15%;
+  }
+  .hero_introduction p {
+    font-size: 25px;
+    line-height: 30px;
+    width: 95%;
+    margin: auto;
+  }
+  .style-names {
+    font-size: 25px;
+  }
+
+  /** Email Sign Up **/
+  .email-sign-up {
+    height: 100px;
+    margin: 0;
+  }
+  .form-container {
+    width: 100%;
+    text-align: center;
+  }
+  form {
+    min-width: 100%;
+    margin-top: 24px;
+  }
+  label {
+    display: inline-block;
+  }
+  input {
+    width: 410px;
+    margin-left: 12px;
+    margin-right: 12px;
+  }
+  button {
+    width: 140px;
+  }
+  /** Product Grid **/
+  .product-grid_heading {
+    width: 302px;
+    height: 60px;
+    font-size: 48px;
+  }
+  /** Footer **/
+  footer {
+    height: 275px;
+    margin: 100px 0 0 0;
+  }
+}
+
+@media only screen and (min-width: 1024px) {
+
+  /** Hero Section **/
+  .hero {
+    height: 550px;
+    background: url('/assets/shoes/stylized/story-image-desktop.jpg') center center no-repeat;
+  }
+  .hero_introduction {
+    padding-top: 40px;
+  }
+  .hero_introduction p {
+    width: 561px;
+    height: 129px;
+    font-size: 35px;
+    line-height: 43px;
+  }
+  .style-names {
+    font-size: 35px;
+  }
+  /** Product Grid **/
+  .product-grid h3 {
+    margin: 70px auto;
+  }
+  .card-container {
+    width: 600px;
+  }
+}
+
+@media only screen and (min-width: 1352px) {
+
+  /** Hero Section **/
+  .hero {
+    height: 830px;
+  }
+  .hero_bottom-copy {
+    bottom: 50px;
+  }
+  .style-names {
+    display: inline-block;
+  }
+  .styles-shown {
+    display: inline-block;
+    width: 85px;
+    height: 21px;
+    color: rgb(0, 0, 0);
+    font-size: 17px;
+  }
+
+  /** Product Grid **/
+  .card-container {
+    width: 1352px;
+  }
+  .card {
+    margin-bottom: 55px;
+    width: 300px;
+  }
+  .card_image {
+    width: 100%;
+    height: 300px;
+  }
+  .card_image img {
+    width: 276px;
+    height: 273px;
+  }
+  .shoe-name {
+    font-size: 35px;
+    border-right: 2px solid rgb(243, 201, 177);
+    line-height: 27px;
+    padding-right: 10px;
+    display: inline-block;
+  }
+  .item-number {
+    font-size: 17px;
+    display: inline-block;
+    padding-left: 10px;
+  }
+  .color-options-menu {
+    display: none;
+  }
+  .shoe-color-images {
+    display: block;
+    margin-top: 15px;
+  }
+  .single-shoe-image {
+    width: 40px;
+    height: 40px;
+    margin-left: 8px;
+    display: inline-block;
+  }
+  .single-shoe-image:nth-child(1) {
+    margin-left: 0;
+  }
+  .single-shoe-image img {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+  }
+
+  /** Footer **/
+  footer {
+    margin: 100px auto 0 auto;
+  }
 }
