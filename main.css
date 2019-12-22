@@ -1,0 +1,230 @@
+* {
+  box-sizing: border-box;
+}
+
+body,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+li,
+a {
+  margin: 0;
+  padding: 0;
+}
+
+/*********** Global Values **********/
+
+body {
+  background-color: #fff;
+  font-family: 'Dosis', sans-serif;
+  font-weight: normal;
+}
+
+main {
+  width: 300px;
+  margin: auto;
+}
+
+/********** Typography **********/
+
+.bold-font-weight {
+  font-weight: 600;
+}
+
+/*********** Header **********/
+
+header {
+  height: 60px;
+}
+
+/********** Hero Image section **********/
+
+.hero {
+  width: 100%;
+  height: 300px;
+  background: url('/assets/shoes/stylized/story-image-mobile.jpg') center center no-repeat;
+  background-size: cover;
+  position: relative;
+}
+
+.hero_introduction {
+  width:100%;
+  height: 66px;
+  text-align: center;
+  padding-top: 14px;
+}
+.hero_bottom-copy {
+  width: 144px;
+  height: 20px;
+  position: absolute;
+  bottom: 12px;
+  right: 19px;
+}
+.hero_introduction p {
+  color: rgb(0, 0, 0);
+  font-size: 17px;
+  letter-spacing: 0.5px;
+  line-height: 22px;
+  display: inline-block;
+  width: 95%;
+  margin: auto;
+}
+.hero_bottom-copy p {
+  text-transform: uppercase;
+  color: rgb(0, 0, 0);
+  font-size: 16px;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+}
+
+/********** Email Sign Up Section **********/
+
+.email-sign-up {
+  height: 100px;
+  width: 100%;
+  margin: 10px auto 0 auto;
+  background: rgb(246, 246, 247);
+}
+.email-sign-up form {
+  width: 280px;
+  margin: auto;
+}
+label {
+  display: block;
+  width: 124px;
+  height: 22px;
+  color: rgb(0, 0, 0);
+  font-size: 18px;
+  letter-spacing: 0.5px;
+  padding-top: 7px;
+}
+input {
+  width: 180px;
+  height: 50px;
+  background: rgb(255, 255, 255);
+  border: 1px solid rgb(0, 0, 0);
+  border-radius: 0px;
+  margin-top: 20px;
+}
+input[placeholder='email address'] {
+  color: rgb(148, 150, 152);
+  font-size: 16px;
+  font-family: 'Dosis', sans-serif;
+  font-weight: normal;
+  letter-spacing: 0.5px;
+  padding-left: 20px;
+}
+button {
+  width: 91px;
+  height: 50px;
+  background: rgb(246, 246, 247);
+  border: 1px solid rgb(0, 0, 0);
+  border-radius: 0px;
+  font-family: 'Dosis', sans-serif;
+  font-weight: 600;
+  font-size: 17px;
+  letter-spacing: 0.5px;
+  color: rgb(35, 31, 32);
+  text-transform: uppercase;
+}
+
+/********** Product Grid Section **********/
+.product-grid {
+  width: 100%;
+  margin-top: 20px;
+}
+.product-grid_heading {
+  margin: auto;
+  width: 155px;
+  height: 31px;
+  color: rgb(0, 0, 0);
+  font-size: 24px;
+  letter-spacing: 0.5px;
+}
+.card-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  margin-top: 25px;
+}
+.card {
+  margin-bottom: 21px;
+}
+.card_image {
+  width: 140px;
+  height: 140px;
+  border: 1px solid rgb(243, 201, 177);
+  border-radius: 0px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.card_image img {
+  width: 132px;
+  height: 132px;
+  border-radius: 0px;
+  object-fit: contain;
+}
+.shoe-name {
+  width: 73px;
+  height: 35px;
+  color: rgb(0, 0, 0);
+  font-size: 30px;
+  text-transform: uppercase;
+  letter-spacing: 1.71px;
+  line-height: 35px;
+  margin-top: 16px;
+}
+.item-number,
+.color-options-menu {
+  height: 17px;
+  color: rgb(0, 0, 0);
+  font-size: 16px;
+  letter-spacing: 0.47px;
+  line-height: 17px;
+}
+
+/********** Footer **********/
+footer {
+  width: 304px;
+  height: 274px;
+  background: rgb(243, 243, 244);
+  margin: 15px auto 9px auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.footer-content-container {
+  width: 170px;
+  height: 135px;
+  text-align: center;
+}
+.footer-content-container p:first-child {
+  width: 167px;
+  height: 31px;
+  color: rgb(0, 0, 0);
+  font-size: 24px;
+  text-transform: uppercase;
+  margin-bottom: 16px;
+}
+.footer-content-container div:nth-child(2),
+.footer-content-container div:nth-child(3) {
+  display: inline-block;
+}
+.footer-content-container div:nth-child(2) {
+  margin-right: 8px;
+}
+.footer-content-container div:nth-child(3) {
+  margin-left: 8px;
+}
+.footer-content-container p:nth-child(4) {
+  width: 169px;
+  height: 26px;
+  color: rgb(0, 0, 0);
+  font-size: 20px;
+  margin-top: 16px;
+}
