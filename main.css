@@ -84,7 +84,7 @@ header {
 .hero {
   width: 100%;
   height: 300px;
-  background: url('/assets/shoes/stylized/story-image-mobile.jpg') center center no-repeat;
+  background: url('assets/shoes/stylized/story-image-mobile.jpg') center center no-repeat;
   background-size: cover;
   position: relative;
 }
@@ -344,7 +344,7 @@ footer {
   /** Hero Section **/
   .hero {
     height: 550px;
-    background: url('/assets/shoes/stylized/story-image-desktop.jpg') center center no-repeat;
+    background: url('assets/shoes/stylized/story-image-desktop.jpg') center center no-repeat;
   }
   .hero_introduction {
     padding-top: 40px;
